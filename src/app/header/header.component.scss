@@ -2,7 +2,9 @@
   width: 50vw;
   margin: 0px 25vw;
   display: flex;
+  background-image: url(.././../assets/imgs/posts_background.png);
 }
+
 .headerContent {
   display: flex;
   align-items: center;
@@ -12,9 +14,21 @@
   background-color: aliceblue;
   padding: 0px 15px;
   width: 100%;
+
   border-radius: 10px;
 }
 .logoImg {
-  width: 70px;
-  height: 70px;
+  width: 80px;
+  height: 80px;
+}
+
+.burgermenu {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  &:hover {
+    cursor: pointer;
+  }
 }

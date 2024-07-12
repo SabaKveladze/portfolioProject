@@ -1,0 +1,25 @@
+<div class="usersContainer" *ngIf="users?.length; else noData">
+  <table class="usersTable">
+    <thead>
+      <tr>
+        <th>Company Name</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Mobile Nom.</th>
+        <th>Posts</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{ user.company.name }}</td>
+        <td>{{ user.name }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.phone }}</td>
+        <td><button class="userPostsBtn">Posts</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<ng-template #noData>
+  <p>No data available.</p>
+</ng-template>

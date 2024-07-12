@@ -1,0 +1,9 @@
+<div class="burger-menu">
+  <button (click)="toggleMenu()">
+    <span><img class="burger" src="../../assets/imgs/burg.png" /></span>
+  </button>
+  <div *ngIf="menuOpen" class="menu-options">
+    <button routerLink="/users">Users</button>
+    <button routerLink="/posts">Posts</button>
+  </div>
+</div>

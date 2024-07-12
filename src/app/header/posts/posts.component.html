@@ -1,6 +1,6 @@
 <div class="wrapper">
   <div class="postsContainer">
-    <table>
+    <table class="postsTable">
       <tr>
         <th>POST'S Author</th>
         <th>TITLE</th>
@@ -10,29 +10,5 @@
         <td>{{ post.title }}</td>
       </tr>
     </table>
-    
-    <!-- <div *ngIf="users?.length; else noData">
-      <table>
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Email</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let user of users">
-            <td>{{ user.id }}</td>
-            <td>{{ user.name }}</td>
-            <td>{{ user.email }}</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <ng-template #noData>
-      <p>No data available.</p>
-    </ng-template>
-  </div>
-</div> -->
   </div>
 </div>

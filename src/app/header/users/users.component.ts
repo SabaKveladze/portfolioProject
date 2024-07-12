@@ -1,27 +1,22 @@
 import { Component, OnInit } from '@angular/core';
 import { Users } from '../../interfaces/users.interface';
-import { HttpClientModule } from '@angular/common/http';
 import { ApiService } from '../../services/api.service';
-import { CommonModule } from '@angular/common';
 import { Posts } from '../../interfaces/posts.interface';
+import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 @Component({
-  selector: 'app-posts',
+  selector: 'app-users',
   standalone: true,
   imports: [CommonModule, HttpClientModule],
-  templateUrl: './posts.component.html',
-  styleUrls: ['./posts.component.scss'],
+  templateUrl: './users.component.html',
+  styleUrl: './users.component.scss',
 })
-export class PostsComponent implements OnInit {
-  users!: Users[];
-  posts!: Posts[];
+export class UsersComponent implements OnInit {
   constructor(private apiService: ApiService) {}
-
+  users!: Users[];
   ngOnInit(): void {
     this.apiService.getUsers().subscribe((users) => {
       this.users = users;
-    });
-    this.apiService.getPosts().subscribe((posts) => {
-      this.posts = posts;
     });
   }
   getUserName(userId: number): String {

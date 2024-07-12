@@ -1,0 +1,36 @@
+.burger-menu {
+  position: relative;
+  display: inline-block;
+
+  button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .menu-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+
+    button {
+      padding: 10px;
+      border: none;
+      background: none;
+      cursor: pointer;
+
+      &:hover {
+        background: #f0f0f0;
+      }
+    }
+  }
+}
+.burger {
+  width: 30px;
+  height: 30px;
+}
