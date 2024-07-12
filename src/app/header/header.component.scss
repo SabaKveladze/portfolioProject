@@ -20,12 +20,14 @@
 .logoImg {
   width: 80px;
   height: 80px;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
-.burgermenu {
+app-burger-menu {
   width: 30px;
   height: 30px;
-  position: absolute;
   left: 5px;
   top: 5px;
   &:hover {

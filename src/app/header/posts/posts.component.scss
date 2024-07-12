@@ -19,6 +19,7 @@ table {
 }
 td {
   text-align: center;
+  justify-content: center;
 }
 td,
 th {
@@ -56,4 +57,18 @@ tr {
 }
 .usersTable th {
   width: 20%;
+}
+.detailsBtn {
+  border-radius: 10px;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    transition-duration: 0.5s;
+    background-color: rgb(0, 157, 255);
+    color: white;
+    scale: 1.1;
+    cursor: pointer;
+  }
 }

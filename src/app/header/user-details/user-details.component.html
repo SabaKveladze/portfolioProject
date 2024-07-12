@@ -1,0 +1,18 @@
+<div class="wrapper">
+  <div class="usersContainer" *ngIf="resolvedPosts.length; else noData">
+    <div class="grid">
+      <div *ngFor="let user of resolvedPosts">
+        <div class="cardContainer">
+          <h3>TITLE</h3>
+          <p>{{ user.title }}</p>
+          <h3>Details</h3>
+          <p>{{ user.body }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <ng-template #noData>
+    <p>No data available.</p>
+  </ng-template>
+</div>

@@ -1,5 +1,4 @@
 .burger-menu {
-  position: relative;
   display: inline-block;
 
   button {
@@ -10,16 +9,15 @@
   }
 
   .menu-options {
-    position: absolute;
-    top: 100%;
-    left: 0;
     background: white;
     border: 1px solid #ccc;
     display: flex;
     flex-direction: column;
+    border-radius: 6px;
+    z-index: 10;
 
     button {
-      padding: 10px;
+      padding: 30px 50px;
       border: none;
       background: none;
       cursor: pointer;

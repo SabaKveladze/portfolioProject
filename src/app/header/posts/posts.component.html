@@ -4,10 +4,12 @@
       <tr>
         <th>POST'S Author</th>
         <th>TITLE</th>
+        <th>Details</th>
       </tr>
       <tr *ngFor="let post of posts">
         <td>{{ getUserName(post.userId) }}</td>
         <td>{{ post.title }}</td>
+        <td><button class="detailsBtn" (click)="navigateToPost(post)">Details</button></td>
       </tr>
     </table>
   </div>

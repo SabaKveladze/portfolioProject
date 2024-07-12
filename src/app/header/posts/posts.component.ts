@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { Users } from '../../interfaces/users.interface';
+import { User } from '../../interfaces/users.interface';
 import { HttpClientModule } from '@angular/common/http';
 import { ApiService } from '../../services/api.service';
 import { CommonModule } from '@angular/common';
 import { Posts } from '../../interfaces/posts.interface';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-posts',
   standalone: true,
@@ -12,9 +13,9 @@ import { Posts } from '../../interfaces/posts.interface';
   styleUrls: ['./posts.component.scss'],
 })
 export class PostsComponent implements OnInit {
-  users!: Users[];
+  users!: User[];
   posts!: Posts[];
-  constructor(private apiService: ApiService) {}
+  constructor(private apiService: ApiService, private router: Router) {}
 
   ngOnInit(): void {
     this.apiService.getUsers().subscribe((users) => {
@@ -28,4 +29,11 @@ export class PostsComponent implements OnInit {
     const user = this.users?.find((user) => user.id === userId);
     return user ? user.name : '';
   }
+  navigateToPost(post: Posts): void {
+    console.log(post.id);
+    this.router.navigate(['/posts', post.id]);
+  }
+  // goToPost(postId: number): void {
+  //   this.router.navigate(['/posts', postId]);
+  // }
 }
