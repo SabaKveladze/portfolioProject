@@ -12,8 +12,17 @@ body {
 *::after {
   box-sizing: border-box;
 }
-.footerContainer {
+.wrapper {
   width: 100%;
+  display: flex;
+
+  justify-content: center;
+}
+.footerContainer {
+  width: 50%;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0;
   height: 200px;
   display: flex;
   flex-direction: row;
@@ -38,13 +47,9 @@ a {
   color: rgb(145, 145, 145);
   display: flex;
   margin-left: 10px;
+  font-family: sans-serif;
   cursor: pointer;
   align-items: center;
-  &:hover {
-    color: rgb(41, 254, 137);
-    transition-duration: 0.5s;
-    scale: 1.1;
-  }
 }
 .croc {
   width: 60px;
@@ -59,5 +64,17 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
+
   justify-content: left;
+  &:hover {
+    a:hover {
+      color: rgb(41, 254, 137);
+      transition-duration: 0.5s;
+    }
+    scale: 1.1;
+    transition-duration: 0.5s;
+    img:hover {
+      cursor: pointer;
+    }
+  }
 }

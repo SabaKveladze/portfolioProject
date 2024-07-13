@@ -1,7 +1,14 @@
-.wrapper {
-  width: 50vw;
-  margin: 0px 25vw;
+.mainDiv {
+  width: 100%;
   display: flex;
+
+  justify-content: center;
+}
+.wrapper {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  position: relative;
   background-image: url(.././../assets/imgs/posts_background.png);
 }
 
@@ -28,8 +35,8 @@
 app-burger-menu {
   width: 30px;
   height: 30px;
-  left: 5px;
-  top: 5px;
+  left: -170px;
+  position: absolute;
   &:hover {
     cursor: pointer;
   }
