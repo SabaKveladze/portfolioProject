@@ -9,7 +9,7 @@ import { UserDetailsComponent } from './header/user-details/user-details.compone
 export const routes: Routes = [
   { path: 'posts', component: PostsComponent },
   { path: '', redirectTo: '/firstPage', pathMatch: 'full' },
-  { path: 'firstPage', component: MainPageComponent },
+  { path: 'mainPage', component: MainPageComponent },
   { path: 'users', component: UsersComponent },
   { path: 'users/:userId', component: UserDetailsComponent },
   { path: 'posts/:postId', component: PostsComponent },

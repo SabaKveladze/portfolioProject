@@ -43,8 +43,4 @@ export class UserDetailsComponent {
       }
     );
   }
-  // getUserPosts(userId: number) {
-  //   const posts = this.posts?.filter((post) => post.userId === userId);
-  //   return posts ? posts : [];
-  // }
 }

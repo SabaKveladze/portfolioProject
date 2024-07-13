@@ -6,6 +6,7 @@ import { TodoComponent } from './header/todo/todo.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PostsComponent } from './header/posts/posts.component';
 import { BurgerMenuComponent } from './burger-menu/burger-menu.component';
+import { FooterComponent } from './footer/footer.component';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -19,6 +20,7 @@ import { BurgerMenuComponent } from './burger-menu/burger-menu.component';
     HttpClientModule,
     PostsComponent,
     BurgerMenuComponent,
+    FooterComponent,
   ],
 })
 export class AppComponent {
