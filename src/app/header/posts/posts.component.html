@@ -10,9 +10,11 @@
         <td>{{ getUserName(post.userId) }}</td>
         <td>{{ post.title }}</td>
         <td>
-          <button class="detailsBtn" (click)="navigateToPost(post)">
-            Details
-          </button>
+          <div class="flex">
+            <button class="detailsBtn" (click)="navigateToPost(post)">
+              Details
+            </button>
+          </div>
         </td>
       </tr>
     </table>

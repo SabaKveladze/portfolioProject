@@ -1,6 +1,6 @@
 <div class="backGroundContainer">
   <div class="mainContainer">
-    <div *ngFor="let todo of todos" class="content">
+    <div *ngFor="let todo of resolvedTodos" class="content">
       <p><span>Title:</span>{{ todo.title }}</p>
       <div class="completion">
         <span>Completion:</span>
@@ -8,7 +8,7 @@
           [src]="
             todo.completed
               ? '../../../assets/imgs/true.png'
-              : '../../../assets/imgs/false1.png'
+              : '../../../assets/imgs/false.png'
           "
           alt="Completion Icon"
         />

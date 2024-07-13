@@ -43,7 +43,5 @@ export class PostsComponent implements OnInit {
     this.postTitle = post.title;
     this.postBody = post.body;
   }
-  // goToPost(postId: number): void {
-  //   this.router.navigate(['/posts', postId]);
-  // }
+  
 }

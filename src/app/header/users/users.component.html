@@ -1,3 +1,11 @@
+<div class="search-container">
+  <input
+    type="text"
+    placeholder="Search users..."
+    [(ngModel)]="searchQuery"
+    (input)="filterUsers()"
+  />
+</div>
 <div class="usersContainer" *ngIf="users?.length; else noData">
   <table class="usersTable">
     <thead>
@@ -7,18 +15,29 @@
         <th>Email</th>
         <th>Mobile Nom.</th>
         <th>Posts</th>
+        <th>To-Do</th>
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let user of users">
+      <tr *ngFor="let user of filteredUsers">
         <td>{{ user.company.name }}</td>
         <td>{{ user.name }}</td>
         <td>{{ user.email }}</td>
         <td>{{ user.phone }}</td>
+
         <td>
-          <button class="userPostsBtn" (click)="navigateToUserPosts(user)">
-            Posts
-          </button>
+          <div class="flex">
+            <button class="userPostsBtn" (click)="navigateToUserPosts(user)">
+              Posts
+            </button>
+          </div>
+        </td>
+        <td>
+          <div class="flex">
+            <button class="userPostsBtn" (click)="navigateToUserTodos(user)">
+              To-Do
+            </button>
+          </div>
         </td>
       </tr>
     </tbody>

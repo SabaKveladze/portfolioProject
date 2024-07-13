@@ -14,9 +14,10 @@ body {
 }
 
 .wrapper {
-  width: 50vw;
+  width: 50%;
   margin: 0px 25vw;
   display: flex;
+  justify-content: center;
 }
 .postsContainer {
   width: 100%;
@@ -40,6 +41,11 @@ td,
 th {
   padding: 13px 20px;
   width: 33%;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 th {
   text-align: center;

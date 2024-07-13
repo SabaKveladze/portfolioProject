@@ -27,4 +27,9 @@ export class ApiService {
       `https://jsonplaceholder.typicode.com/posts/?userId=${id}`
     );
   }
+  getUserTodos(id: number): Observable<Todo[]> {
+    return this.http.get<Todo[]>(
+      `https://jsonplaceholder.typicode.com/todos/?userId=${id}`
+    );
+  }
 }
