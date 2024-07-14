@@ -21,11 +21,12 @@ body {
 .footerContainer {
   width: 50%;
   border-radius: 10px;
-  height: 200px;
+  height: 250px;
   display: flex;
+  padding-bottom: 15px;
   flex-direction: row;
   gap: 40px;
-  background-color: aliceblue;
+  background-color: #635fc4;
   justify-content: center;
   margin-top: 30px;
 }
@@ -36,16 +37,22 @@ body {
   width: 250px;
 }
 h3 {
-  color: rgb(145, 145, 145);
+  color: white;
   display: flex;
+  font-family: "Poppins";
+  font-weight: bold;
   justify-content: center;
+}
+.mail {
+  fill: #dec3cc;
 }
 a {
   text-decoration: none;
-  color: rgb(145, 145, 145);
+  color: white;
   display: flex;
   margin-left: 10px;
-  font-family: sans-serif;
+  font-family: "Poppins";
+
   cursor: pointer;
   align-items: center;
 }
@@ -74,5 +81,18 @@ a {
     img:hover {
       cursor: pointer;
     }
+  }
+}
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 1024px) {
+  body {
+    background-color: blue;
+  }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  body {
+    background-color: olive;
   }
 }

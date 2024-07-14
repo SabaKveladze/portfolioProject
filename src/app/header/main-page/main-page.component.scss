@@ -1,39 +1,100 @@
 .mainPageContainer {
   width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.mainPageCont {
+  width: 100%;
 
   display: flex;
   margin-top: 30px;
   justify-content: center;
 }
+.mainPageImgSector {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  max-width: 350px;
+  word-break: break-word;
+  justify-content: center;
+  text-align: left;
+  padding-left: 50px;
+  p {
+    text-align: left;
+  }
+  h1 {
+    width: 100%;
+    font-family: "Poppins";
+    text-align: left;
+  }
+}
+.rectangle {
+  background-color: #635fc4;
+  height: 4px;
+  width: 40px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: left;
+}
+.mainPageWhiteBack {
+  display: flex;
+  border-radius: 10px;
+  justify-content: space-between;
+  background-color: white;
+
+  width: 50%;
+}
 
 .mainPage {
   width: 50%;
   height: 100%;
-  background-color: #fdc45d;
-  border-radius: 10px;
+  gap: 20%;
+  justify-content: center;
+  background-color: white;
   display: flex;
   flex-direction: row;
 }
 .mainPageContent {
   display: flex;
+  background-color: white;
   flex-direction: column;
+  border-radius: 10px;
+  max-width: 350px;
+  text-align: end;
+  padding-right: 30px;
+  word-break: break-word;
+  margin-top: 150px;
 }
 .mainImg {
   width: 100%;
   max-width: 600px;
   min-width: 150px;
   border-radius: 10px;
+  padding: 0px 30px;
   height: 100%;
   max-height: 600px;
   min-height: 250px;
 }
 h2 {
-  font-family: sans-serif;
+  font-family: "Poppins";
   color: #133058;
   text-align: center;
 }
 p {
-  font-family: sans-serif;
+  font-family: "Poppins";
   color: #133058;
   text-align: center;
+}
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 1024px) {
+  body {
+    background-color: blue;
+  }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  body {
+    background-color: olive;
+  }
 }

@@ -16,9 +16,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  p {
+    color: white;
+  }
 }
 .headerContainer {
-  background-color: aliceblue;
+  background-color: #635fc4;
   padding: 0px 15px;
   width: 100%;
 

@@ -1,13 +1,14 @@
 .backGroundContainer {
-  width: 100vw;
+  width: 100%;
+  display: flex;
+  justify-content: center;
   height: fit-content;
-  background-image: url(../../../assets/imgs/posts_background.png);
 }
 .mainContainer {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100vw;
+  width: 50%;
   margin-top: 90px;
   flex-direction: column;
   gap: 10px;
@@ -17,7 +18,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 15px;
-  width: 70vw;
+  width: calc(100% - 30px);
   background-color: white;
   border-radius: 10px;
   box-shadow: 10px 10px 10px -7px rgba(0, 0, 0, 0.75);
