@@ -65,7 +65,7 @@ body {
 
 .modal-body {
   position: relative;
-  padding: 1rem;
+  padding: 16px;
 }
 .close {
   height: 30px;
@@ -96,4 +96,32 @@ p {
   border: 1px solid gray;
   padding: 15px;
   border-radius: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .modal {
+    left: 25%;
+    top: 15%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .modal {
+    left: 15%;
+    top: 15%;
+  }
+  .modal-body {
+    padding: 12px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .modal {
+    left: 1%;
+    top: 15%;
+  }
+  .modal-header,
+  .modal-content,
+  .modal-footer,
+  .modal-body {
+    padding: 10px;
+  }
 }
