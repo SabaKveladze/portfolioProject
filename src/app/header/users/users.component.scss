@@ -94,15 +94,34 @@ tr {
   width: 20%;
 }
 /* On screens that are 992px or less, set the background color to blue */
-@media screen and (max-width: 992px) {
-  body {
-    background-color: blue;
+@media screen and (max-width: 1024px) {
+  .usersTable {
+    width: 80%;
+  }
+  th,
+  td {
+    padding: 10px;
   }
 }
-
+@media screen and (max-width: 1700px) {
+  th,
+  td {
+    padding: 8px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  th,
+  td {
+    font-size: 12px;
+    padding: 4px;
+  }
+  .userPostsBtn {
+    padding: 8px;
+  }
+}
 /* On screens that are 600px or less, set the background color to olive */
-@media screen and (max-width: 600px) {
-  body {
-    background-color: olive;
+@media screen and (max-width: 700px) {
+  .userPostsBtn {
+    padding: 4px;
   }
 }

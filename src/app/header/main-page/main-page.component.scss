@@ -10,6 +10,9 @@
   margin-top: 30px;
   justify-content: center;
 }
+.mainPageWrapper {
+  width: 100%;
+}
 .mainPageImgSector {
   display: flex;
   flex-direction: column;
@@ -84,17 +87,82 @@ p {
   font-family: "Poppins";
   color: #133058;
   text-align: center;
+  min-width: 100px;
 }
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 1024px) {
-  body {
-    background-color: blue;
+  .mainPage {
+    width: 80%;
+  }
+  .mainPageWhiteBack {
+    width: 80%;
   }
 }
-
-/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 1400px) {
+  h1 {
+    font-size: 16px;
+  }
+  h2 {
+    font-size: 15px;
+  }
+  p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 13px;
+  }
+  h2 {
+    font-size: 12px;
+  }
+  p {
+    font-size: 10px;
+  }
+  .mainPageImgSector {
+    width: 200px;
+  }
+}
 @media screen and (max-width: 600px) {
-  body {
-    background-color: olive;
+  h1 {
+    font-size: 13px;
+  }
+  h2 {
+    font-size: 12px;
+  }
+  p {
+    font-size: 10px;
+  }
+  .mainImg {
+    width: 200px;
+    height: 230px;
+  }
+  .mainPage {
+    gap: 10%;
+  }
+  .lastP {
+    padding-right: none;
+    padding-left: 20px;
+  }
+  .mainPageContent {
+    padding-right: none;
+  }
+}
+@media screen and (max-width: 450px) {
+  .mainImg {
+    width: 100%;
+    height: 100%;
+  }
+  .mainPage {
+    flex-direction: column;
+  }
+  .mainPageContent {
+    margin-top: 20px;
+  }
+  .second {
+    flex-direction: column-reverse;
+  }
+  .mainPageWhiteBack {
+    flex-direction: column-reverse;
   }
 }

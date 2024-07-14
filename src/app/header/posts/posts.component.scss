@@ -14,13 +14,12 @@ body {
 }
 
 .wrapper {
-  width: 50%;
-  margin: 0px 25vw;
+  width: 100%;
   display: flex;
   justify-content: center;
 }
 .postsContainer {
-  width: 100%;
+  width: 50%;
   height: fit-content;
   margin-top: 20px;
   background-image: url(../.././../assets/imgs/posts_background.png);
@@ -95,15 +94,22 @@ tr {
   }
 }
 /* On screens that are 992px or less, set the background color to blue */
-@media screen and (max-width: 992px) {
-  body {
-    background-color: blue;
+@media screen and (max-width: 1024px) {
+  .postsContainer {
+    width: 80%;
   }
 }
 
 /* On screens that are 600px or less, set the background color to olive */
-@media screen and (max-width: 600px) {
-  body {
-    background-color: olive;
+@media screen and (max-width: 500px) {
+  th,
+  tr {
+    font-size: 11px;
+  }
+  td {
+    padding: 6px 11px;
+  }
+  .detailsBtn {
+    padding: 4px 6px;
   }
 }

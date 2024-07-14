@@ -44,3 +44,19 @@ app-burger-menu {
     cursor: pointer;
   }
 }
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    width: 80%;
+  }
+  app-burger-menu {
+    left: -70px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .wrapper {
+    width: 80%;
+  }
+  app-burger-menu {
+    left: -40px;
+  }
+}

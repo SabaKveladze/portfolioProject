@@ -85,14 +85,25 @@ a {
 }
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 1024px) {
-  body {
-    background-color: blue;
+  .footerContainer {
+    width: 80%;
   }
 }
 
 /* On screens that are 600px or less, set the background color to olive */
 @media screen and (max-width: 600px) {
-  body {
-    background-color: olive;
+  .footerContainer {
+    flex-direction: column;
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .footerContainer {
+    flex-direction: column;
+    height: fit-content;
+    a {
+      font-size: 12px;
+    }
   }
 }
